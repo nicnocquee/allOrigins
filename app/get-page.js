@@ -58,6 +58,7 @@ async function getPageInfo(url) {
 }
 
 async function getRawPage(url, requestMethod, charset) {
+  console.log(`[getRawPage] ${url}`)
   const { content, response, error } = await request(
     url,
     requestMethod,
